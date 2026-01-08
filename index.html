@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIME - Flappy Arms Prototype</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid #444;
+            background-color: #87CEEB;
+            display: block;
+            margin: 0 auto;
+        }
+        #controls {
+            color: #fff;
+            margin-top: 20px;
+            text-align: left;
+            max-width: 800px;
+        }
+        .control-row {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="controls">
+            <h3>Controls:</h3>
+            <div class="control-row"><strong>A/D</strong> - Move left/right</div>
+            <div class="control-row"><strong>Space/W</strong> - Jump</div>
+            <div class="control-row"><strong>Q</strong> - Left arm flap</div>
+            <div class="control-row"><strong>E</strong> - Right arm flap</div>
+            <div class="control-row"><strong>R</strong> - Both arms flap</div>
+            <div class="control-row"><strong>F</strong> - Brace (hold arms)</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
