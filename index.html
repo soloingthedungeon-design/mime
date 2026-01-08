@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIME - Floppy Arms Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1a1a2e;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        canvas {
+            border: 3px solid #0f3460;
+            background-color: #16213e;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        #controls {
+            color: #e94560;
+            background-color: #0f3460;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 800px;
+        }
+        #controls h2 {
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+        #controls p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .key {
+            display: inline-block;
+            background-color: #e94560;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="controls">
+            <h2>MIME - Floppy Arms Prototype</h2>
+            <p><span class="key">A</span> / <span class="key">D</span> or <span class="key">←</span> / <span class="key">→</span> - Move Left/Right</p>
+            <p><span class="key">SPACE</span> or <span class="key">W</span> or <span class="key">↑</span> - Jump</p>
+            <p><span class="key">Q</span> - Flail Left Arm | <span class="key">E</span> - Flail Right Arm</p>
+        </div>
+    </div>
+    <script src="mime.js"></script>
+</body>
+</html>
