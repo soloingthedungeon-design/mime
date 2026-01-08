@@ -10,6 +10,11 @@ const GROUND_Y = 500;
 const PLAYER_WIDTH = 40;
 const PLAYER_HEIGHT = 60;
 
+// Shoulder position offsets
+const LEFT_SHOULDER_X_OFFSET = 10;
+const RIGHT_SHOULDER_X_OFFSET = 20;
+const SHOULDER_Y_OFFSET = 15;
+
 // Input state
 const keys = {};
 let lastFlapTime = {
@@ -77,15 +82,15 @@ class MimeBody {
 
     getLeftShoulderPos() {
         return {
-            x: this.x + 10 * this.facing,
-            y: this.y + 15
+            x: this.x + LEFT_SHOULDER_X_OFFSET * this.facing,
+            y: this.y + SHOULDER_Y_OFFSET
         };
     }
 
     getRightShoulderPos() {
         return {
-            x: this.x + 20 * this.facing,
-            y: this.y + 15
+            x: this.x + RIGHT_SHOULDER_X_OFFSET * this.facing,
+            y: this.y + SHOULDER_Y_OFFSET
         };
     }
 
